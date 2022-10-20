@@ -66,6 +66,17 @@ h1 {
   font-weight: normal;
 }
 
+.tblTxt {
+  font-size: 20px;
+  letter-spacing: -0.05em;
+  text-size-adjust: none;
+  text-align: center;
+  font-family: "Noto Sans KR", "맑은 고딕", "Malgun Gothic", 돋움, Dotum, sans-serif;
+  color: rgb(0, 0, 0);
+  line-height: 1em;
+  font-weight: normal;
+}
+
 .player {
   height: 100px;
   margin-top: auto;
