@@ -1,5 +1,5 @@
 import { Table } from 'react-bootstrap';
-import data from '../data';
+import { data } from '../data';
 import Number from './Number';
 
 function ResultTable(props) {

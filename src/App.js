@@ -1,6 +1,6 @@
 import './App.css';
 import { Button } from 'react-bootstrap';
-import data from './data';
+import { data, curPrice } from './data';
 import { useEffect, useState, useRef } from 'react';
 import Result from './component/Result'
 import Number from './component/Number'
@@ -10,7 +10,7 @@ import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
 
 function App() {
-
+  const winPrice = curPrice;
   /**
    * 지난 회차수
    */
@@ -115,7 +115,8 @@ function App() {
 
         {/* ****************이번 회차 추첨**************** */}
         <div className="mt-5">
-          <h1 className="m-5">{maxRound + 1} 회 추첨</h1>
+          <h1 className="">{maxRound + 1} 회 추첨</h1>
+          <h5>당첨 금액 : {winPrice}원</h5>
           {/* {
             numArr.map((num, i) =>
               <Number color={colorArr[i > 3 ? 0 : i]} number={num} key={i} />

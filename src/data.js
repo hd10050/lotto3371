@@ -15,8 +15,9 @@ let data = [
   //   date: "2022-22-22",
   //   num: ["3", "2", "1", "7"],
   //   price: " sk "
-  // }
-  
+  // }  
 ];
 
-export default data;
+let curPrice = "8,000";
+
+export { data, curPrice };
