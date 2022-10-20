@@ -1,12 +1,14 @@
+import AudioPlayer from 'react-h5-audio-player';
 
 function Player() {
     return (
         <div className="player">
-            <div className="playerContents">
-                <h2 className="playerTitle">
-                    Do what you love
-                </h2>
-            </div>
+            <AudioPlayer
+                autoPlay={false}
+                src={process.env.PUBLIC_URL + "/bgm/Go.mp3"}
+                volume={0.2}
+                onPlay={e => console.log("onPlay")}
+            />
         </div>
     )
 }

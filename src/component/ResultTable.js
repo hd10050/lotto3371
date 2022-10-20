@@ -5,7 +5,7 @@ import Number from './Number';
 function ResultTable(props) {
     return (
         <div className="container">
-            <Table striped className="table table-borderless tblTxt align-middle">
+            <Table striped className="table table-borderless tblTxt align-middle mb-5">
                 <thead>
                     <tr>
                         <th>회차</th>

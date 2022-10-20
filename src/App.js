@@ -6,6 +6,8 @@ import Result from './component/Result'
 import Number from './component/Number'
 import Player from './component/Player'
 import ResultTable from './component/ResultTable'
+import AudioPlayer from 'react-h5-audio-player';
+import 'react-h5-audio-player/lib/styles.css';
 
 function App() {
 
@@ -106,9 +108,9 @@ function App() {
 
   return (
     <div className="App" >
-      <div className="container">
+      <div className="container mainContent">
         <h1 className="m-5">🎉3371배 미니복권🎆</h1>
-        <Player />
+
         <Result data={resultData} colorArr={colorArr} prevBtn={clickPrevBtn} nextBtn={clickNextBtn} />
 
         {/* ****************이번 회차 추첨**************** */}
@@ -133,11 +135,12 @@ function App() {
             setIsShow([false, "light"]);
         }}>회차별 결과</Button>
         <Button className="col-4 m-5" variant="success" onClick={() => { clickDrawBtn() }}>{"추첨하기 ..." + btnClickCnt}</Button>
-      </div>
 
-      {
-        !isShow[0] ? null : <ResultTable colorArr={colorArr} />
-      }
+        {
+          !isShow[0] ? null : <ResultTable colorArr={colorArr} />
+        }
+      </div>
+      <Player />
     </div>
   );
 
