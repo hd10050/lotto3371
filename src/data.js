@@ -36,6 +36,6 @@ let data = [
   }
 ];
 
-let curPrice = "35,000";
+let curPrice = "42,000";
 
 export { data, curPrice };
