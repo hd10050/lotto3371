@@ -5,6 +5,12 @@
  */
 let data = [
   {
+    round: "6",
+    date: "2022-11-27",
+    num: ["1", "3", "6", "10"],
+    price: " - "
+  },
+  {
     round: "5",
     date: "2022-11-27",
     num: ["3", "8", "10", "12"],
@@ -36,6 +42,6 @@ let data = [
   }
 ];
 
-let curPrice = "42,000";
+let curPrice = "49,000";
 
 export { data, curPrice };
